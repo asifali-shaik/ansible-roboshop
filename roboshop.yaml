@@ -1,6 +1,6 @@
 # creating ec2-instance and creating r53 records by using ansible 
 - name: creating ec2 and r53 records
-  host: local
+  hosts: local
   connection: local
   vars:
     sg_id: sg-0e4cc6ef0fc01d10d
