@@ -1,4 +1,4 @@
-# creating ec2-instance and creating r53 records by using ansible 
+
 - name: creating ec2 and r53 records
   hosts: localhost
   connection: local
@@ -11,7 +11,7 @@
     - catalogue
   tasks:
   - name: creating ec2 instances
-    amazon.aws.ec2.instance:
+    amazon.aws.ec2_instance:
       instance_type : "t3.micro"
       security_group: "{{ sg_id }}"
       image_id: "{{ ami_id }}"
