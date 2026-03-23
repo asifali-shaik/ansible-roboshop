@@ -18,7 +18,7 @@
       shell : /sbin/nologin
       comment : "roboshop system user"  
 
-  - name : creating app directory
+  - name : delete app directory
     ansible.builtin.file:
        path : /app
        state: absent      
