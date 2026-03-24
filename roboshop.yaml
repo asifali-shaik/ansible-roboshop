@@ -47,7 +47,7 @@
       type: A
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
-      wait: true    
+   
     loop: "{{ ec2_output.results }}"
 
   - name: creating r53 records
@@ -58,7 +58,7 @@
       type: A
       ttl: 1
       value: "{{ item.instances[0].public_ip_address }}"
-      wait: true    
+        
     loop: "{{ ec2_output.results }}"
     when: 
     - item.item == "frontend"
