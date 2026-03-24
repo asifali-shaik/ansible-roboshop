@@ -49,10 +49,13 @@
       path: /app   
 
   - name: copy the repo
-    ansible.builtin.copy:
+    ansible.builtin.template:
       src: user.service
       dest:  /etc/systemd/system/user.service     
 
+  - name: reloaded the system
+    ansible.builtin.systemd_service:
+      daemon_reload: true
 
   - name: start user
     ansible.builtin.service:
