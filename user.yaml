@@ -25,7 +25,7 @@
 
   - name: creating app directory
     ansible.builtin.file:
-      name: app
+      name: /app
       state: directory   
 
   - name: delete user zip file
