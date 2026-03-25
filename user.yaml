@@ -24,7 +24,7 @@
       state: absent
 
   - name: creating app directory
-    ansible.bulitin.file:
+    ansible.builtin.file:
       name: app
       state: directory   
 
