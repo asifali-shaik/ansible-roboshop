@@ -39,7 +39,7 @@
       dest : /tmp/cart.zip 
 
   - name: install dependences
-    community.gernal.npm:
+    community.general.npm:
      path: /app
 
   - name: copy the cart service
