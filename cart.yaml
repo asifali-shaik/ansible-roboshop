@@ -29,7 +29,7 @@
       state: directory
 
   -  name: delete cart zip file
-     ansible.buildtin.file:
+     ansible.builtin.file:
       path: /tmp/cart.zip
       state: absent
    
