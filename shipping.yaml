@@ -19,7 +19,7 @@
       comment: "roboshop system user"
 
   - name: delete the directory
-    anisble.builtin.file:
+    ansible.builtin.file:
       name: /app
       state: absent 
 
