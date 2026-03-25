@@ -7,7 +7,7 @@
 
   - name: install redis
     ansible.builtin.dnf:
-      name: redis
+      name: redis7
       state: present
 
 
@@ -29,6 +29,6 @@
 
   - name: start and enable redis
     ansible.builtin.service:
-      name: redis
+      name: redis7
       state: restarted
       enabled: yes
