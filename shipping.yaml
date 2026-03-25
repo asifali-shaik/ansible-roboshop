@@ -61,7 +61,7 @@
 
   - name: daemon reloaded
     ansible.builtin.systemd_service:
-      daemon_reloaded: true
+      daemon_reload: true
 
   - name: install dependencies
     ansible.builtin.pip:

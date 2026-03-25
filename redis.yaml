@@ -25,7 +25,7 @@
 
   - name: daemon reloaded
     ansible.builtin.systemd_service:
-      daemon_reloaded: true
+      daemon_reload: true
 
   - name: start and enable redis
     ansible.builtin.service:
